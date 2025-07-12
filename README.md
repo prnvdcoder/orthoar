@@ -1,69 +1,82 @@
-# React + TypeScript + Vite
+# ORTHOAR
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+_Transforming Ideas into Seamless Digital Realities_
 
-Currently, two official plugins are available:
+![last commit](https://img.shields.io/github/last-commit/prnvdcoder/orthoar)
+![language](https://img.shields.io/github/languages/top/prnvdcoder/orthoar)
+![typescript](https://img.shields.io/badge/typescript-94.5%25-blue)
+![npm](https://img.shields.io/badge/npm-enabled-red)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> Built with: JSON, Markdown, NPM, JavaScript, React, TypeScript, Vite, ESLint
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Table of Contents
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- [Overview](#overview)
+- [Why Orthoar?](#why-orthoar)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Testing](#testing)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Overview
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Orthoar is a developer-centric framework that provides a solid foundation for building React applications using **TypeScript** and **Vite**. It is optimized for rapid development, high code quality, and maintainability. This framework integrates essential tools and configurations to:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Streamline workflows  
+- Enforce code quality  
+- Support scalable architecture  
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## Why Orthoar?
+
+This project accelerates the development of modern, responsive web applications with a focus on orthodontic workflows.  
+**Core Features:**
+
+- 🚀 **Hot Module Replacement**: Instant updates during development for faster feedback.
+- 🎨 **Tailwind CSS Integration**: Utility-first styling for consistent UI design.
+- 🛠️ **ESLint & TypeScript Configs**: Maintain high code quality with best practices.
+- 📁 **Modular Architecture**: Scale effortlessly with organized project references.
+- 🦷 **AR & Reporting Pages**: Supports features like image annotation and PDF report generation.
+- 📊 **Performance Monitoring**: Tracks web vitals to improve user experience.
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- **Programming Language**: TypeScript
+- **Package Manager**: npm
+
+---
+
+### Installation
+
+1. **Clone the repository:**
+
+   git clone https://github.com/prnvdcoder/orthoar
+
+2. **Navigate to the project directory:**
+
+    cd orthoar
+
+3. **Install the dependencies:**
+
+    npm install
+
+**Usage**
+To run the project locally:
+
+  npm start
+Testing
+Orthoar uses the {test_framework} test framework. Run the test suite with:
+
+  npm test
